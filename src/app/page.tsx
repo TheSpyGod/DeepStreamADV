@@ -62,22 +62,22 @@ export default function Home() {
             width={60} 
             height={0}
             layout="intrinsic" />
-            <h1 className="text-xl font-normal">Limited Edition Oxygen Tanks<br/><b className="font-bold text-[var(--accent-activateddark)]">COMING SOON.</b></h1>
+            <h1 className="text-xl font-normal">Oxygen Tank Customization<br/><b className="font-bold text-[var(--accent-activateddark)]">COMING SOON.</b></h1>
         </div>
       <div className="imagebg flex flex-col bg-[url('/view.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center relative">
 
-        <p className="text-5xl text-[var(--accent2)]">In-House <span className="text-[var(--accent1)]">preparation</span><br/>and <span className="text-[var(--accent1)]">full renovation</span></p>
+        <p className="text-5xl text-[var(--accent2)]">Competent <span className="text-[var(--accent1)]"> Dive Master, <br/> Full Training </span> and <span className="text-[var(--accent1)]">Overview</span></p>
         <p className="text-[var(--accent2)]">this covers: </p>
         <br/><br/>
-        <ol className="list-disc marker:text-[var(--accent1)]"> 
-          <li>Internal Plumbing and wiring</li>
-          <li>Plaster, Glue, Drywall, Mesh</li>
-          <li>Full Painting of the interior</li>
+        <ol className="list-disc marker:text-[var(--accent1)] text-white"> 
+          <li>Example</li>
+          <li>Example</li>
+          <li>Example</li>
         </ol>
       </div>
 
           <div className=" imagebg flex flex-col bg-[url('/plato.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center">
-            <p className="text-white text-5xl ">Outside <span className="text-[var(--accent1)]">preperation </span><br/>and <span className="text-[var(--accent1)]">full renovation</span></p>
+            <p className="text-white text-5xl ">Outside <span className="text-[var(--accent1)]">preperation </span><br/>and <span className="text-[var(--accent1)]">full training</span></p>
           </div>
 
             <Image 
