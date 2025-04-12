@@ -1,103 +1,100 @@
 import Image from "next/image";
-
+import "./styles/globals.css";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-auto min-w-auto">
+      <div className="header p-3 rounded-full top-0 sticky wx-full container bg-white mx-auto flex flex-row justify-between border-box border-border place-items-center content-center items-center w-full">
+        {/* Services should be the main selling point, HIGHLIGHT IT! */}
+        
+        <div className="text-black px-2 font-bold">
+          <Image 
+            src="/diver.svg"
+            alt="ABM Logo"
+            width={60} 
+            height={0}
+            layout="intrinsic" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="flex gap-6">
+          <button className="flex items-center justify-center bg-[var(--accent1)] h-auto w-auto text-center text-white font-bold p-2 rounded-full px-5 transition-transform duration-3000 hover:bg-[var(--accent-activatedlight)]">Explore<b>.</b></button>
+          <button className="flex items-center justify-center bg-[var(--accent2)] h-auto w-auto text-white font-normal p-2 rounded-full px-5 transition-transform duration-3000 hover:bg-[var(--accent-activateddark)]">About<b>.</b></button>
+          <button className="flex items-center justify-center bg-[var(--accent2)] h-auto w-auto text-white font-normal p-2 rounded-full px-5 transition-transform duration-3000 hover:bg-[var(--accent-activateddark)]">Contact<b>.</b></button>
+        </div>
+
+
+        <div className="text-black px-5">
+        </div>
+
+      </div>
+
+
+      <div className="titlescreen flex flex-col gap-4 h-[100vh] w-full items-center justify-center text-center relative">
+  {/* Video Background */}
+  <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
+    <source src="water.MP4" type="video/mp4" />
+  </video>
+
+  {/* Text Overlay */}
+  <div className="font-bold text-5xl sm:text-6xl relative flex z-10">
+    <span className="text-white px-4">Looking for </span>
+    <span className="relative inline-block h-[1.2em] min-w-[12ch] align-middle overflow-hidden">
+      <span className="rotating-text block">adventure?</span>
+      <span className="rotating-text block">exploration?</span>
+      <span className="rotating-text block">the thrill?</span>
+    </span>
+  </div>
+
+  <button className="rounded bg-[var(--accent1)] mx-auto px-5 p-2 text-2xl text-white font-bold transition-transform duration-3000 hover:bg-[var(--accent-activatedlight)]">
+    Call Now!
+  </button>
+</div>
+
+      <div className="flex flex-col bg-[var(--background)] h-[300vh] p-0 px-0 w-full items-center text-center">
+        
+        {/* Slide in services, aka. Images with examples and sliding text with images */}
+     
+      <div className="text-black font-bold w-full">
+        <div className="imagehighlight flex flex-col p-5 text-black text-7xl bg-gradient-to-r from-black to-black h-[100vh] items-center justify-center text-center">
+
+        <Image 
+            src="/oxygentank.png"
+            alt="ABM Logo"
+            width={60} 
+            height={0}
+            layout="intrinsic" />
+            <h1 className="text-xl font-normal">Limited Edition Oxygen Tanks<br/><b className="font-bold text-[var(--accent-activateddark)]">COMING SOON.</b></h1>
+        </div>
+      <div className="imagebg flex flex-col bg-[url('/view.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center relative">
+
+        <p className="text-5xl text-[var(--accent2)]">In-House <span className="text-[var(--accent1)]">preparation</span><br/>and <span className="text-[var(--accent1)]">full renovation</span></p>
+        <p className="text-[var(--accent2)]">this covers: </p>
+        <br/><br/>
+        <ol className="list-disc marker:text-[var(--accent1)]"> 
+          <li>Internal Plumbing and wiring</li>
+          <li>Plaster, Glue, Drywall, Mesh</li>
+          <li>Full Painting of the interior</li>
+        </ol>
+      </div>
+
+          <div className=" imagebg flex flex-col bg-[url('/plato.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center">
+            <p className="text-white text-5xl ">Outside <span className="text-[var(--accent1)]">preperation </span><br/>and <span className="text-[var(--accent1)]">full renovation</span></p>
+          </div>
+
+            <Image 
+            src="/ABM_logo.png"
+            alt="ABM Logo"
+            width={800} 
+            height={0}
+            layout="intrinsic" />
+            <Image 
+            src="/ABM_logo.png"
+            alt="ABM Logo"
+            width={800} 
+            height={0}
+            layout="intrinsic" />
+            <span className=""></span>
+        </div>
+      </div>
+    </main>
   );
 }

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.top-bar .bottom{
+    background-color: var(--foreground);
+}
+
+.middle {
+    background-color: var(--background);
+}
+
+.top-bar button {
+    background-color: var(--accent1);
+}
