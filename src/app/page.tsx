@@ -35,15 +35,12 @@ export default function Home() {
   return (
     <main className="min-h-auto min-w-auto relative">
 
-      {/* Titlescreen Section */}
       <div className="fixed top-0 left-0 w-full h-full" style={{ opacity: getOpacity(0), zIndex: 10 }}>
   <div className="titlescreen flex flex-col gap-4 h-[100vh] w-full items-center justify-center text-center">
-    {/* Video Background */}
     <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
       <source src="DSA_Marketing3.mp4" type="video/mp4" />
     </video>
 
-    {/* Text Overlay */}  
     <div className="font-bold text-5xl sm:text-6xl relative flex z-10">
       <span className="text-white px-4">Looking for </span>
       <span className="relative inline-block h-[1.2em] min-w-[12ch] align-middle overflow-hidden">
@@ -59,9 +56,7 @@ export default function Home() {
   </div>
 </div>
 
-      {/* Other sections */}
       <div className="relative flex flex-col bg-[var(--background)] h-[300vh] w-full items-center text-center">
-        {/* Image highlight section */}
         <div
           className="imagehighlight fixed flex flex-col p-5 text-black text-7xl bg-gradient-to-r from-black to-black h-[100vh] items-center justify-center text-center top-0 left-0 w-full z-10 transition-opacity duration-1000 will-change-opacity"
           style={{ opacity: getOpacity(1) }}
@@ -72,7 +67,6 @@ export default function Home() {
             </video>
         </div>
 
-        {/* Background section 1 */}
         <div
           className="imagebg fixed flex flex-col bg-[url('/view.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center absolute top-0 left-0 w-full z-0 transition-opacity duration-1000 will-change-opacity"
           style={{ opacity: getOpacity(2) }}
@@ -91,7 +85,6 @@ export default function Home() {
           </ol>
         </div>
 
-        {/* Background section 2 */}
         <div
           className="imagebg fixed flex flex-col bg-[url('/fish1.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center absolute top-0 left-0 w-full z-0 transition-opacity duration-1000 will-change-opacity"
           style={{ opacity: getOpacity(3) }}
@@ -103,7 +96,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Background section 3 */}
         <div
           className="imagebg fixed flex flex-col h-[100vh] bg-cover w-full bg-center items-center justify-center text-center absolute top-0 left-0 w-full z-0 transition-opacity duration-1000 will-change-opacity"
           style={{ opacity: getOpacity(3) }}
