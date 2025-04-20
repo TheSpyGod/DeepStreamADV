@@ -1,5 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
+
+
+
+
+
 import "./styles/globals.css";
 
 export default function Home() {
@@ -40,10 +45,10 @@ export default function Home() {
   <div className="titlescreen flex flex-col gap-4 h-[100vh] w-full items-center justify-center text-center">
     {/* Video Background */}
     <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted>
-      <source src="water.MP4" type="video/mp4" />
+      <source src="DSA_Marketing3.mp4" type="video/mp4" />
     </video>
 
-    {/* Text Overlay */}
+    {/* Text Overlay */}  
     <div className="font-bold text-5xl sm:text-6xl relative flex z-10">
       <span className="text-white px-4">Looking for </span>
       <span className="relative inline-block h-[1.2em] min-w-[12ch] align-middle overflow-hidden">
@@ -105,7 +110,7 @@ export default function Home() {
 
         {/* Background section 3 */}
         <div
-          className="imagebg fixed flex flex-col bg-[url('/plato.jpg')] h-[100vh] bg-cover w-full bg-center items-center justify-center text-center absolute top-0 left-0 w-full z-0 transition-opacity duration-1000 will-change-opacity"
+          className="imagebg fixed flex flex-col h-[100vh] bg-cover w-full bg-center items-center justify-center text-center absolute top-0 left-0 w-full z-0 transition-opacity duration-1000 will-change-opacity"
           style={{ opacity: getOpacity(3) }}
         >
           <p className="text-white text-5xl">
